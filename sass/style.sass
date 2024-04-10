@@ -1,10 +1,73 @@
-*
+*,
+*::before,
+*::after
+    padding: 0
+    margin: 0
+    border: 0
     box-sizing: border-box
+a
+    text-decoration: none
+    margin: 0
 
+$font-family: "RF Dewi Expanded", sans-serif
+$second-family: "RF Dewi", sans-serif
+$third-family: "Montserrat", sans-serif
+$font3: "Montserrat Alternates", sans-serif
+
+@mixin text
+    font-family: $second-family
+    font-weight: 600
+    font-size: 16px
+    line-height: 131%
+    color: #fff
+
+@mixin title
+    font-family: $font-family
+    font-weight: 700
+    font-size: 45px
+    line-height: 129%
+    color: #fff
+
+@mixin clear-button
+    cursor: pointer
+    width: 250px
+    height: 60px
+    font-family: $font-family
+    font-weight: 700
+    font-size: 18px
+    text-align: center
+    opacity: 1
+    color: #fff
+    background-color: rgba(28,28,28,0)
+    border: 0
+
+@mixin white-button()
+    cursor: pointer
+    border: 0
+    width: 250px
+    height: 60px
+    font-family: $font-family
+    font-weight: 700
+    font-size: 18px
+    text-align: center
+    color: #000
+    background: #fff
 
 @import "reset/resets.scss"
 @import "reset/normalizez.scss"
+@import "pages/main/_main.sass"
 
-// переменная
-$font-family: "Geologica", sans-serif
+main
+    overflow: hidden
 
+.container
+    
+    margin: 0 auto
+    max-width: 1300px
+
+.clear-button
+    @include clear-button
+
+.white-button
+    @include white-button()
+    

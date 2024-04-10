@@ -1,5 +1,14 @@
-* {
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
   box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  margin: 0; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -350,5 +359,113 @@ template {
  */
 [hidden] {
   display: none; }
+
+.welcome-main-section {
+  position: relative;
+  min-height: 760px; }
+  .welcome-main-section__header {
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%); }
+  .welcome-main-section__welcom-box {
+    position: relative;
+    z-index: 1;
+    padding-top: 276px; }
+  .welcome-main-section__background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(180deg, #1e1e1e 0%, #000 100%);
+    opacity: 0.6; }
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0; }
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu__list {
+  display: flex; }
+
+.list__item {
+  margin-right: 30px; }
+  .list__item a {
+    font-family: "RF Dewi", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 129%;
+    text-align: center;
+    color: #fff; }
+
+.welcome-box__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+.welcome-box__title {
+  margin-bottom: 23px; }
+.welcome-box__text {
+  margin-bottom: 36px; }
+
+.title-welcome {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 129%;
+  text-align: center;
+  color: #fff; }
+
+.text-welcome {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 129%;
+  text-align: center;
+  color: #fff; }
+
+.buttons__leave-a-request {
+  margin-right: 28px; }
+
+main {
+  overflow: hidden; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px; }
+
+.clear-button {
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  opacity: 1;
+  color: #fff;
+  background-color: rgba(28, 28, 28, 0);
+  border: 0; }
+
+.white-button {
+  cursor: pointer;
+  border: 0;
+  width: 250px;
+  height: 60px;
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  background: #fff; }
 
 /*# sourceMappingURL=style.css.map */
