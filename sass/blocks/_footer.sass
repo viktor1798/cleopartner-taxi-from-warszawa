@@ -1,0 +1,183 @@
+$font-family: "Geologica", sans-serif
+
+.footer
+    background-color: #292929
+    margin-top: -2px
+    &__container
+        padding: 60px 0
+        display: flex
+        justify-content: space-between
+    &__img
+    &__contact
+    &__opening-times
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__legal-entity
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+.contact
+    &__title-footer
+    &__address-footer
+    &__email-footer
+    &__number-footer
+    &__icons-footer
+        display: flex
+        margin-bottom: 40px
+    &__call-back-footer
+
+.icons-footer
+    &__tg
+        width: 24px
+        height: 24px
+        margin-right: 5px
+    &__viber
+        width: 24px
+        height: 24px
+
+.footer-title
+    font-family: $font-family
+    font-weight: 700
+    font-size: 20px
+    color: #fff
+    margin-bottom: 20px
+
+.footer-p
+    font-family: $font-family
+    font-weight: 400
+    font-size: 14px
+    color: #fff
+    margin-bottom: 10px
+
+.opening-times
+    &__title-footer
+    &__times
+    &__privacy-policy
+        a
+            color: #c2c2c2
+    &__text-block
+
+.legal-entity
+    &__title-footer
+    &__legal
+    &__id-company
+        a
+            color: #c2c2c2
+    &__text-block
+        flex: 1 1 auto
+
+.href
+    font-family: $font-family
+    font-weight: 400
+    font-size: 12px
+    text-decoration: underline
+    text-decoration-skip-ink: none
+
+@media ( max-width:1199px  )
+    .footer
+        &__img
+            margin-right: 20px
+
+@media ( max-width:991px  )
+    .footer
+        &__contact
+            margin-right: 20px
+        &__opening-times
+            margin-right: 20px
+        &__legal-entity
+@media ( max-width:768px  )
+    .footer
+        padding-top: 40px
+        &__container
+            height: 344px
+            position: relative
+        &__contact
+        &__opening-times
+            width: 160px
+            height: 55px
+        &__legal-entity
+            position: absolute
+            top: 120px
+            right: 0px
+            width: 160px
+            height: 101px
+    .footer
+        &__img
+            margin-right: 50px
+    .contact
+        &__call-back-footer
+            position: absolute
+            left: 90px
+            // bottom: 20px
+    .opening-times
+        &__privacy-policy
+            position: absolute
+            bottom: 58.8px
+            left: 100px
+@media ( max-width:480px  )
+    .footer
+        &__container
+        &__contact
+            position: absolute
+            top: 60px
+            left: 20px
+        &__opening-times
+            position: absolute
+            left: 240px
+        &__legal-entity
+            left: 240px
+
+    .footer
+        &__img
+            margin-right: 50px
+            margin-left: 20px
+    .contact
+        &__call-back-footer
+            position: absolute
+            left: 0px
+            bottom: -10px
+    .opening-times
+        &__privacy-policy
+            position: relative
+            top: 210px
+            left: 0
+            bottom: -100px
+    .legal-entity
+        &__id-company
+            position: relative
+            top: 40px
+
+@media ( max-width:410px  )
+    .footer
+        padding: 10px
+        &__container
+            position: static
+            flex-direction: column
+            align-items: center
+            height: 570px
+        &__contact
+            position: static
+            margin-left: 10px
+            width: 100%
+        &__opening-times
+            margin-left: 10px
+            position: static
+            width: 100%
+        &__legal-entity
+            margin-left: -10px
+            position: static
+            width: 100%
+            padding-bottom: 140px
+    .contact
+        &__call-back-footer
+            position: static
+    
+    .opening-times
+        &__privacy-policy
+            position: static
+
+    .legal-entity
+        &__id-company
+            position: static
