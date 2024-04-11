@@ -15,50 +15,97 @@
 
 <body>
 
-    <main>
-      <section class="welcome-main-section">
-        <header class="welcome-main-section__header">
-          <div class="header__container container">
-            <div class="header__logo">
-              <img class="logo__img" src="img/welcome-main-section/header-logo.png" alt="">
-            </div>
-            <div class="header__menu">
-              <ul class="menu__list">
-                <li class="list__item"><a href="">Главная</a></li>
-                <li class="list__item"><a href="">Страховка</a></li>
-                <li class="list__item"><a href="">FAQ</a></li>
-                <li class="list__item"><a href="">Доставка</a></li>
-                <li class="list__item"><a href="">Контакты</a></li>
+  <main>
+    <section class="welcome-main-section">
+      <header class="welcome-main-section__header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <img class="logo__img" src="img/welcome-main-section/header-logo.png" alt="">
+          </div>
+          <div class="header__menu">
+            <ul class="menu__list">
+              <li class="list__item"><a href="">Главная</a></li>
+              <li class="list__item"><a href="">Страховка</a></li>
+              <li class="list__item"><a href="">FAQ</a></li>
+              <li class="list__item"><a href="">Доставка</a></li>
+              <li class="list__item"><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <button class="header__button clear-button">Оставить заявку</button>
+        </div>
+      </header>
+      <div class="welcome-main-section__welcom-box">
+        <div class="welcome-box__container container">
+          <h1 class="welcome-box__title title-welcome">Подключайтесь к такси в Польше
+            с ежедневным стабильным заработком!</h1>
+          <p class="welcome-box__text text-welcome">Ежедневные выплаты стали реальными вместе с Cleo Partner</p>
+          <div class="welcome-box__buttons">
+            <button class="buttons__leave-a-request  white-button">Оставить заявку</button>
+            <button class="buttons__follow-up clear-button">Узнать больше</button>
+          </div>
+        </div>
+      </div>
+      <video preload="auto" autoplay muted loop class="welcome-main-section__background-video">
+        <source type="video/webm" src="video/warszawa.mp4">
+      </video>
+    </section>
+    <section class="about-our-company">
+      <div class="about-our-company__container container">
+        <div class="about-our-company__about-us-box">
+          <div class="about-us-box__img">
+            <img class="img__about-us" src="img/welcome-main-section/our-company/phone.png" alt="">
+          </div>
+          <div class="about-us-box__text-block-about-us">
+            <h2 class="text-block-about-us__title title">О нашей компании</h2>
+            <h3 class="text-block-about-us__subtitle subtitle">Компания Cleo Partners предлагает Вам комплексное
+              сотрудничество на платформах Uber, Bolt, Free Now, Uber Eats, Bolt Food.</h3>
+            <p class="text-block-about-us__subtext subtext">С нами уже работают более 2000 довольных водителей по всей
+              Польше, которые ежедневно зарабатывают.</p>
+          </div>
+        </div>
+        <div class="about-our-company__work-us-box">
+          <div class="work-us-box__text-block-work-us">
+            <h3 class="text-block-work-us__title subtitle">Работая с нами Вы сохраняете все преимущества водителя такси
+            </h3>
+            <div class="text-block-work-us__benefits-points-block">
+              <ul class="benefits-points-block__list-benefits-points">
+                <li class="list-benefits-points__item subtext">Вы имеете возможность самостоятельно устанавливать рабочий
+                  график и получать заработанные деньги ежедневно.
+                </li>
+                <li class="list-benefits-points__item subtext">Всего 4 документа разделяют вас от обычного человека и
+                  работника нашей компании.
+
+                </li>
+                <li class="list-benefits-points__item subtext">Работать можно на собственном или арендованном автомобиле из
+                  нашего автопарка, либо из автопарка
+                  за пределами компании.
+                </li>
               </ul>
             </div>
-            <button class="header__button clear-button">Оставить заявку</button>
+            <div class="text-block-work-us__buttons-work-us">
+              <button class="buttons-work-us__advice grey">Консультация</button>
+              <button class="buttons-work-us__follow-up clear-button">Узнать больше</button>
+            </div>  
           </div>
-        </header>
-        <div class="welcome-main-section__welcom-box">
-          <div class="welcome-box__container container">
-            <h1 class="welcome-box__title title-welcome">Подключайтесь к такси в Польше
-              с ежедневным стабильным заработком!</h1>
-            <p class="welcome-box__text text-welcome">Ежедневные выплаты стали реальными вместе с Cleo Partner</p>
-            <div class="welcome-box__buttons">
-              <button class="buttons__leave-a-request  white-button">Оставить заявку</button>
-              <button class="buttons__follow-up clear-button">Узнать больше</button>
+          <div class="work-us-box__img">
+            <img class="img__work-us-box" src="img/welcome-main-section/our-company/macbook.png" alt="">
+            <div class="img__gif-in-macbook">
+              <img class="gif-in-macbook__gif" src="icons/gif/map.gif" alt="">
             </div>
           </div>
         </div>
-        <video preload="auto" autoplay muted loop class="welcome-main-section__background-video">
-          <source type="video/webm" src="video/warszawa.mp4">
-      </video>
-      <section class="about-our-company"></section>
-      <section class="our-advantages"></section>
-      <section class="reviews-from-employees"></section>
-      <section class="car-requirement"></section>
-      <section class="job-application"></section>
-      <section class="we-work-in-cities"></section>
-      <section class="our-contact"></section>
-    </main>
-    <footer class="footer">
+      </div>
+    </section>
+    <section class="our-advantages"></section>
+    <section class="reviews-from-employees"></section>
+    <section class="car-requirement"></section>
+    <section class="job-application"></section>
+    <section class="we-work-in-cities"></section>
+    <section class="our-contact"></section>
+  </main>
+  <footer class="footer">
 
-    </footer>
+  </footer>
 
 </body>
 <!-- <script src="js/index.js"></script> -->

@@ -9,16 +9,29 @@ a
     text-decoration: none
     margin: 0
 
-$font-family: "RF Dewi Expanded", sans-serif
-$second-family: "RF Dewi", sans-serif
-$third-family: "Montserrat", sans-serif
-$font3: "Montserrat Alternates", sans-serif
+    $font-family: "RF Dewi Expanded", sans-serif
+    $second-family: "RF Dewi", sans-serif
+    $third-family: "Montserrat", sans-serif
+    $font3: "Montserrat Alternates", sans-serif
 
 @mixin text
     font-family: $second-family
     font-weight: 600
     font-size: 16px
     line-height: 131%
+    color: #fff
+
+@mixin subtext
+    font-family: $second-family
+    font-weight: 600
+    font-size: 16px
+    opacity: 0.6
+    color: #fff
+
+@mixin subtitle
+    font-family: $font-family
+    font-weight: 700
+    font-size: 26px
     color: #fff
 
 @mixin title
@@ -41,6 +54,19 @@ $font3: "Montserrat Alternates", sans-serif
     background-color: rgba(28,28,28,0)
     border: 0
 
+@mixin grey()
+    border-radius: 20px
+    width: 202px
+    height: 53px
+    cursor: pointer
+    border: 1px solid #fff
+    font-family: $font-family
+    font-weight: 700
+    font-size: 16px
+    line-height: 157%
+    text-align: center
+    color: #fff
+    background: rgba(255, 255, 255, 0.3)
 @mixin white-button()
     cursor: pointer
     border: 0
@@ -61,13 +87,27 @@ main
     overflow: hidden
 
 .container
-    
+
     margin: 0 auto
     max-width: 1300px
+
+.subtitle
+    @include subtitle
+
+.title
+    @include title
+
+.text
+    @include text
 
 .clear-button
     @include clear-button
 
 .white-button
     @include white-button()
-    
+
+.grey
+    @include grey()
+
+.subtext
+    @include subtext

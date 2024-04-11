@@ -405,7 +405,11 @@ template {
     font-size: 18px;
     line-height: 129%;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    transition: 0.5s; }
+
+.list__item a:hover {
+  color: #E9BC47; }
 
 .welcome-box__container {
   display: flex;
@@ -436,12 +440,86 @@ template {
 .buttons__leave-a-request {
   margin-right: 28px; }
 
+.about-our-company {
+  background-image: url(../img/welcome-main-section/background.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 45px 0 116px 0; }
+  .about-our-company__about-us-box {
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .about-our-company__work-us-box {
+    display: flex; }
+
+.about-us-box__img {
+  margin-right: 96px; }
+
+.text-block-about-us__title {
+  margin-bottom: 23px; }
+.text-block-about-us__subtitle {
+  margin-bottom: 21px; }
+
+.work-us-box__text-block-work-us {
+  max-width: 552px; }
+.work-us-box__img {
+  position: relative;
+  margin-left: 30px; }
+
+.text-block-work-us__title {
+  margin-bottom: 40px; }
+
+.list-benefits-points__item {
+  text-align: left;
+  margin-bottom: 35px;
+  background: url("../icons/green-curcle-li.svg") 0px 3px no-repeat;
+  padding-left: 42px; }
+
+.list-benefits-points__item:last-child {
+  margin-bottom: 50px; }
+
+.img__gif-in-macbook {
+  position: absolute;
+  left: 65px;
+  top: 14px; }
+
+.gif-in-macbook__gif {
+  width: 567px;
+  height: 356px; }
+
+.buttons-work-us__advice {
+  margin-right: 30px; }
+
 main {
   overflow: hidden; }
 
 .container {
   margin: 0 auto;
   max-width: 1300px; }
+
+.subtitle {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #fff; }
+
+.title {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 129%;
+  color: #fff; }
+
+.text {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 131%;
+  color: #fff; }
 
 .clear-button {
   cursor: pointer;
@@ -467,5 +545,26 @@ main {
   text-align: center;
   color: #000;
   background: #fff; }
+
+.grey {
+  border-radius: 20px;
+  width: 202px;
+  height: 53px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 157%;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3); }
+
+.subtext {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  opacity: 0.6;
+  color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
