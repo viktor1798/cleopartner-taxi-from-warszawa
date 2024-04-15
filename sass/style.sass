@@ -1,3 +1,10 @@
+$font-family: "RF Dewi Expanded", sans-serif
+$second-family: "RF Dewi", sans-serif
+$third-family: "Montserrat", sans-serif
+$font3: "Montserrat Alternates", sans-serif
+$text-color:#dfdfdf
+$text-shadow: #000
+
 *,
 *::before,
 *::after
@@ -9,37 +16,37 @@ a
     text-decoration: none
     margin: 0
 
-    $font-family: "RF Dewi Expanded", sans-serif
-    $second-family: "RF Dewi", sans-serif
-    $third-family: "Montserrat", sans-serif
-    $font3: "Montserrat Alternates", sans-serif
 
 @mixin text
     font-family: $second-family
     font-weight: 600
     font-size: 16px
     line-height: 131%
-    color: #fff
+    color: $text-color
+    text-shadow: 1px 1px $text-shadow
 
 @mixin subtext
-    font-family: $second-family
-    font-weight: 600
+    font-family: $third-family
+    font-weight: 500
     font-size: 16px
     opacity: 0.6
-    color: #fff
+    color: $text-color
+    text-shadow: 1px 1px $text-shadow
 
 @mixin subtitle
     font-family: $font-family
     font-weight: 700
     font-size: 26px
-    color: #fff
+    color: $text-color
+    text-shadow: 1px 1px $text-shadow
 
 @mixin title
     font-family: $font-family
     font-weight: 700
     font-size: 45px
     line-height: 129%
-    color: #fff
+    color: $text-color
+    text-shadow: 1px 1px $text-shadow
 
 @mixin clear-button
     cursor: pointer
@@ -50,7 +57,7 @@ a
     font-size: 18px
     text-align: center
     opacity: 1
-    color: #fff
+    color: $text-color
     background-color: rgba(28,28,28,0)
     border: 0
 
@@ -65,8 +72,9 @@ a
     font-size: 16px
     line-height: 157%
     text-align: center
-    color: #fff
+    color: $text-color
     background: rgba(255, 255, 255, 0.3)
+
 @mixin white-button()
     cursor: pointer
     border: 0
@@ -77,7 +85,7 @@ a
     font-size: 18px
     text-align: center
     color: #000
-    background: #fff
+    background: $text-color
 
 @import "reset/resets.scss"
 @import "reset/normalizez.scss"
