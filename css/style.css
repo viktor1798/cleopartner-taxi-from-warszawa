@@ -560,6 +560,129 @@ template {
   justify-content: center;
   align-items: center; }
 
+.reviews-from-employees {
+  background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 100px 0 120px 0; }
+  .reviews-from-employees__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .reviews-from-employees__title {
+    margin-bottom: 50px; }
+  .reviews-from-employees__block-reviews-slide {
+    width: 1069px;
+    height: 502px;
+    border-radius: 61px;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%); }
+
+.block-reviews-slide__item-reviews {
+  position: relative;
+  display: flex; }
+
+.item-reviews__img-driver {
+  margin: 67px 0 0 67px; }
+.item-reviews__texts-block-reviews {
+  margin-top: 104px;
+  margin-left: 68px; }
+.item-reviews__arrow-slide {
+  position: absolute;
+  bottom: -80px;
+  left: 160px;
+  display: flex; }
+
+.texts-block-reviews__text-reviews {
+  max-width: 443px;
+  height: 226px;
+  margin-bottom: 35px; }
+
+.name-and-place__name-driver {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff; }
+
+.arrow-slide__left-arrow {
+  margin-right: 22px; }
+
+.car-requirement {
+  background-image: url(../img/welcome-main-section/background.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 85px 0 45px 0; }
+  .car-requirement__title {
+    text-align: center;
+    margin-bottom: 45px; }
+  .car-requirement__block {
+    display: flex;
+    justify-content: space-between; }
+  .car-requirement__img-car {
+    position: relative; }
+  .car-requirement__benefits-points-block {
+    margin-top: 33px; }
+
+.img-car__car {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .img-car__car img {
+    width: 601px;
+    height: 394px; }
+
+.link-to-app__apple {
+  margin-right: 25px; }
+
+.job-application {
+  position: relative;
+  padding: 86px 0 68px 0;
+  min-height: 348px; }
+  .job-application__container {
+    display: flex; }
+  .job-application__title-job {
+    position: relative;
+    max-width: 736px;
+    z-index: 5;
+    margin-right: 18px; }
+  .job-application__form-block-job-application {
+    position: relative;
+    z-index: 4; }
+  .job-application__background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: linear-gradient(180deg, #1e1e1e 0%, #000 100%);
+    opacity: 0.67; }
+
+.title-job__title {
+  margin-bottom: 40px; }
+
+.form-group__number-type {
+  position: relative; }
+
+.name-type__input-name {
+  padding-left: 34px; }
+
+.number-type__number-name {
+  padding-left: 75px; }
+.number-type__icon-flag {
+  position: absolute;
+  z-index: 6;
+  top: 16px;
+  left: 34px; }
+
 main {
   overflow: hidden; }
 
@@ -571,7 +694,7 @@ main {
   font-family: "RF Dewi Expanded", sans-serif;
   font-weight: 700;
   font-size: 26px;
-  color: #dfdfdf;
+  color: #fff;
   text-shadow: 1px 1px #000; }
 
 .title {
@@ -579,7 +702,7 @@ main {
   font-weight: 700;
   font-size: 45px;
   line-height: 129%;
-  color: #dfdfdf;
+  color: #fff;
   text-shadow: 1px 1px #000; }
 
 .text {
@@ -587,7 +710,7 @@ main {
   font-weight: 600;
   font-size: 16px;
   line-height: 131%;
-  color: #dfdfdf;
+  color: #fff;
   text-shadow: 1px 1px #000; }
 
 .clear-button {
@@ -599,7 +722,7 @@ main {
   font-size: 18px;
   text-align: center;
   opacity: 1;
-  color: #dfdfdf;
+  color: #fff;
   background-color: rgba(28, 28, 28, 0);
   border: 0; }
 
@@ -613,7 +736,7 @@ main {
   font-size: 18px;
   text-align: center;
   color: #000;
-  background: #dfdfdf; }
+  background: #fff; }
 
 .grey {
   border-radius: 20px;
@@ -626,7 +749,7 @@ main {
   font-size: 16px;
   line-height: 157%;
   text-align: center;
-  color: #dfdfdf;
+  color: #fff;
   background: rgba(255, 255, 255, 0.3); }
 
 .subtext {
@@ -634,7 +757,16 @@ main {
   font-weight: 500;
   font-size: 16px;
   opacity: 0.6;
-  color: #dfdfdf;
+  color: #fff;
   text-shadow: 1px 1px #000; }
+
+.input-form-item {
+  border: none;
+  width: 343px;
+  height: 50px;
+  color: #fff;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 18px; }
 
 /*# sourceMappingURL=style.css.map */
