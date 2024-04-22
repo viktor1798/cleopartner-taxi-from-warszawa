@@ -1,0 +1,70 @@
+$second-family: "RF Dewi", sans-serif
+
+@mixin footer-text()
+    font-family: $second-family
+    font-weight: 600
+    font-size: 16px
+    color: #fff
+    opacity: 0.4
+
+.footer
+    background: #1e1e1e
+    padding: 45px 0 58px 0
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__left-box
+    &__right-box
+
+.left-box
+    &__menu-footer
+    &__copyright-and-social-network
+
+.menu-footer
+    &__list-footer
+        display: flex
+        margin-bottom: 77px
+
+.list-footer
+    &__item
+        font-family: $second-family
+        font-weight: 600
+        font-size: 18px
+        line-height: 129%
+        margin-right: 20px
+        a
+            color: #fff
+
+.copyright-and-social-network
+    &__copyright
+        display: flex
+        justify-content: left
+        align-items: center
+
+.copyright
+    &__text
+        @include footer-text()
+        margin-right: 20px
+    &__social-network
+        display: flex 
+        justify-content: center
+        align-items: center
+
+.social-network
+    &__tg
+        margin-right: 6px
+    &__inst
+
+.right-box
+    &__logo
+        margin-bottom: 77px
+    &__privacy-policy-and-agreement
+        display: flex
+
+.privacy-policy-and-agreement
+    &__privacy-policy
+        @include footer-text()
+        margin-right: 20px
+    &__agreement
+        @include footer-text()

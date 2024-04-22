@@ -683,6 +683,122 @@ template {
   top: 16px;
   left: 34px; }
 
+.we-work-in-cities {
+  background-image: url(../img/welcome-main-section/background.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 120px 0 0 0; }
+  .we-work-in-cities__title {
+    text-align: center;
+    margin-bottom: 35px; }
+  .we-work-in-cities__map img {
+    width: 100%; }
+
+.our-contact {
+  background-image: url(../img/welcome-main-section/background.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 48px 0 75px 0; }
+  .our-contact__top-box-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 80px; }
+  .our-contact__bottom-box-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: start; }
+
+.messanger-number__number {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff; }
+
+.bottom-box-contact__number-phone {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff; }
+
+.number-phone__number {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff; }
+
+.telegram__text {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff; }
+
+.footer {
+  background: #1e1e1e;
+  padding: 45px 0 58px 0; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.menu-footer__list-footer {
+  display: flex;
+  margin-bottom: 77px; }
+
+.list-footer__item {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 129%;
+  margin-right: 20px; }
+  .list-footer__item a {
+    color: #fff; }
+
+.copyright-and-social-network__copyright {
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+.copyright__text {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.4;
+  margin-right: 20px; }
+.copyright__social-network {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.social-network__tg {
+  margin-right: 6px; }
+
+.right-box__logo {
+  margin-bottom: 77px; }
+.right-box__privacy-policy-and-agreement {
+  display: flex; }
+
+.privacy-policy-and-agreement__privacy-policy {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.4;
+  margin-right: 20px; }
+.privacy-policy-and-agreement__agreement {
+  font-family: "RF Dewi", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.4; }
+
 main {
   overflow: hidden; }
 

@@ -1,0 +1,54 @@
+$font-family: "RF Dewi Expanded", sans-serif
+
+@mixin number-text()
+    font-family: $font-family
+    font-weight: 700
+    font-size: 18px
+    color: #fff
+
+.our-contact
+    background-image: url(../img/welcome-main-section/background.png)
+    background-color: rgba(0, 0, 0, 0.6)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: 100%
+    padding: 48px 0 75px 0
+    &__container
+    &__top-box-contact
+        display: flex
+        justify-content: space-between
+        align-items: end
+        margin-bottom: 80px
+    &__bottom-box-contact
+        display: flex
+        justify-content: space-between
+        align-items: start
+
+.top-box-contact
+    &__title
+    &__subtext
+    &__logo
+
+.bottom-box-contact
+    &__messanger-number
+    &__telegram
+        a
+
+.messanger-number
+    &__number
+        @include number-text()
+    &__text
+
+.bottom-box-contact
+    &__number-phone
+        @include number-text()
+
+.number-phone
+    &__number
+        @include number-text()
+
+.telegram
+    &__text
+        @include number-text()
+        
