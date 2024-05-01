@@ -848,8 +848,7 @@ template {
   .faq-box__question {
     border-radius: 41px;
     max-width: 100%;
-    backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.18), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%); }
+    background: rgba(0, 0, 0, 0.18); }
 
 .question__el {
   cursor: pointer;
@@ -861,10 +860,102 @@ template {
 
 .el__answer {
   padding: 25px 0 25px 50px;
-  border: 1px solid #e9bc47;
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.4); }
 
+.breakage {
+  padding: 65px 0 235px 0;
+  background-image: url(../img/welcome-main-section/car-requirement/background-map.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .breakage__container {
+    display: flex; }
+  .breakage__info-box {
+    max-width: 738px;
+    margin-right: 70px;
+    padding-top: 65px; }
+  .breakage__images {
+    position: relative; }
+
+.info-box__title {
+  margin-bottom: 30px; }
+.info-box__text {
+  margin-bottom: 34px; }
+.info-box__benefits-points-block {
+  margin-bottom: 45px; }
+
+.images__car-and-phone {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  z-index: 2; }
+.images__ellips {
+  position: absolute;
+  top: 0;
+  z-index: 1; }
+
+.insurance-cost {
+  background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  padding: 77px 0 111px 0; }
+  .insurance-cost__title {
+    text-align: center;
+    margin-bottom: 44px; }
+  .insurance-cost__cost-calculation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+.cost-calculation__calculator {
+  max-width: 598px;
+  min-height: 112px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  width: 598px;
+  height: 112px;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.18); }
+
+.calculator__cost-text {
+  padding-top: 27px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.cost-text__period {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 22px; }
+.cost-text__dash {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 22px; }
+.cost-text__price {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 22px; }
+
+.period__text {
+  color: #e9bc47; }
+
+.price__text {
+  color: #e9bc47; }
+
 main {
+  max-width: 100%;
   overflow: hidden; }
 
 .container {
@@ -940,6 +1031,13 @@ main {
   opacity: 0.6;
   color: #fff;
   text-shadow: 1px 1px #000; }
+
+.faq-page-title {
+  font-family: "RF Dewi Expanded", sans-serif;
+  font-weight: 700;
+  font-size: 113px;
+  text-align: center;
+  color: #fff; }
 
 .input-form-item {
   border: none;

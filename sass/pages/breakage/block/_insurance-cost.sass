@@ -1,0 +1,71 @@
+$font-family: "RF Dewi Expanded", sans-serif
+
+@mixin calculator-text()
+    font-family: $font-family
+    font-weight: 700
+    font-size: 18px
+    color: #fff
+
+.insurance-cost
+    background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png)
+    background-color: rgba(0, 0, 0, 0.6)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: 100%
+    padding: 77px 0 111px 0
+    &__container
+    &__title
+        text-align: center
+        margin-bottom: 44px
+    &__cost-calculation
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+.cost-calculation
+    &__calculator
+        max-width: 598px
+        min-height: 112px
+        border: 2px solid #fff
+        border-radius: 20px
+        width: 598px
+        height: 112px
+        backdrop-filter: blur(4px)
+        background: rgba(0, 0, 0, 0.18)
+    &__buttons
+
+.calculator
+    &__cost-text
+        padding-top: 27px
+        margin-bottom: 28px
+        display: flex
+        justify-content: center
+        align-items: center
+        
+
+.cost-text
+    &__period
+        @include calculator-text()
+        margin-right: 22px
+    &__dash
+        @include calculator-text()
+        margin-right: 22px
+    &__price
+        @include calculator-text()
+        margin-right: 22px
+
+.period
+    &__number
+    &__text
+        color: #e9bc47
+
+.price
+    &__number
+    &__text
+        color: #e9bc47
+
+.cost-calculation
+
+.buttons
+    &__get-insurance

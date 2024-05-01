@@ -91,9 +91,10 @@ a
 @import "reset/normalizez.scss"
 @import "pages/main/_main.sass"
 @import "pages/delivery/_delivery.sass"
+@import "pages/breakage/_breakage.sass"
 
 main
-
+    max-width: 100%
     overflow: hidden
 
 .container
@@ -121,6 +122,13 @@ main
 
 .subtext
     @include subtext
+
+.faq-page-title
+    font-family: $font-family
+    font-weight: 700
+    font-size: 113px
+    text-align: center
+    color: #fff
 
 .input-form-item
     border: none
