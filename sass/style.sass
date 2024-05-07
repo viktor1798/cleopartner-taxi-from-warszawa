@@ -98,7 +98,7 @@ main
     overflow: hidden
 
 .container
-
+    padding: 0 10px
     margin: 0 auto
     max-width: 1300px
 
@@ -138,3 +138,24 @@ main
     backdrop-filter: blur(4px)
     background: rgba(0, 0, 0, 0.3)
     margin-bottom: 18px
+
+@media ( max-width:1199px  )
+    .container
+        max-width: 920px
+
+
+@media ( max-width:991px  )
+    .container
+        max-width: 713px
+
+@media ( max-width:768px  )
+    .container
+        max-width: 475px
+        overflow: hidden
+
+@media ( max-width:480px  )
+    .container
+        max-width: 100%
+
+@media ( max-width:375px  )
+    .container

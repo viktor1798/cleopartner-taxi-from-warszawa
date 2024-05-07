@@ -16,14 +16,14 @@
 <body>
 
   <main>
-    
+
     <section class="welcome-main-section">
       <header class="welcome-main-section__header">
         <div class="header__container container">
           <div class="header__logo">
             <a href="index.html"><img class="logo__img" src="img/welcome-main-section/header-logo.png" alt=""></a>
           </div>
-          <div class="header__menu">
+          <div class="header__menu" id="menu">
             <ul class="menu__list">
               <li class="list__item"><a href="index.html">Главная</a></li>
               <li class="list__item"><a href="src/breakage.html">Страховка</a></li>
@@ -33,8 +33,26 @@
             </ul>
           </div>
           <button class="header__button clear-button">Оставить заявку</button>
+          <div class="header__humburger-menu">
+            <div class="humburger-menu__humb-field" id="hamb">
+              <span class="humb-field__bar"></span> <span class="humb-field__bar"></span>
+              <span class="humb-field__bar"></span>
+            </div>
+          </div>
         </div>
+
       </header>
+      <div class="popup" id="popup">
+        <div class="popup__menu">
+          <ul class="menu__list-popup">
+            <li class="list-popup__item"><a href="index.html">Главная</a></li>
+            <li class="list-popup__item"><a href="src/breakage.html">Страховка</a></li>
+            <li class="list-popup__item"><a href="src/faq.html">FAQ</a></li>
+            <li class="list-popup__item"><a href="src/delivery.html">Доставка</a></li>
+            <li class="list-popup__item"><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="welcome-main-section__welcom-box">
         <div class="welcome-box__container container">
           <h1 class="welcome-box__title title-welcome">Подключайтесь к такси в Польше
@@ -281,7 +299,9 @@
             <p class="number-phone__number">+48 797 133 888</p>
           </div>
           <div class="bottom-box-contact__telegram">
-            <a href="https://t.me/cleo_partner"><p class="telegram__text">t.me/cleo_partner</p></a>
+            <a href="https://t.me/cleo_partner">
+              <p class="telegram__text">t.me/cleo_partner</p>
+            </a>
           </div>
         </div>
       </div>
@@ -303,8 +323,10 @@
           <div class="copyright-and-social-network__copyright">
             <p class="copyright__text text">&copy; 2021 Cleopartner</p>
             <div class="copyright__social-network">
-              <a class="social-network__tg" href="https://t.me/cleo_partner"><img src="img/welcome-main-section/footer/tg.png" alt=""></a>
-              <a class="social-network__inst" href="https://www.instagram.com/cleopartner/"><img src="img/welcome-main-section/footer/inst.png" alt=""></a>
+              <a class="social-network__tg" href="https://t.me/cleo_partner"><img
+                  src="img/welcome-main-section/footer/tg.png" alt=""></a>
+              <a class="social-network__inst" href="https://www.instagram.com/cleopartner/"><img
+                  src="img/welcome-main-section/footer/inst.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -322,6 +344,6 @@
   </footer>
 
 </body>
-<!-- <script src="js/index.js"></script> -->
+<script src="js/index.js"></script>
 
 </html>
