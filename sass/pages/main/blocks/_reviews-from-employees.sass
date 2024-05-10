@@ -15,10 +15,11 @@ $font-family: "RF Dewi Expanded", sans-serif
         justify-content: center
         align-items: center
     &__title
+        text-align: center
         margin-bottom: 50px
     &__block-reviews-slide
-        width: 1069px
-        height: 502px
+        max-width: 1069px
+        min-height: 502px
         border-radius: 61px
         backdrop-filter: blur(4px)
         background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%)
@@ -31,19 +32,27 @@ $font-family: "RF Dewi Expanded", sans-serif
 .item-reviews
     &__img-driver
         margin: 67px 0 0 67px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
     &__texts-block-reviews
         margin-top: 104px
         margin-left: 68px
     &__arrow-slide
-        position: absolute
-        bottom: -80px
-        left: 160px
+        // position: absolute
+        // bottom: -80px
+        // left: 160px
         display: flex
+
+.img-driver
+    &__img
+        margin-bottom: 20px
 
 .texts-block-reviews
     &__text-reviews
         max-width: 443px
-        height: 226px
+        min-height: 226px
         margin-bottom: 35px
     &__name-and-place
 
@@ -59,3 +68,46 @@ $font-family: "RF Dewi Expanded", sans-serif
     &__left-arrow
         margin-right: 22px
     &__right-arrow
+
+@media ( max-width:1199px  )
+
+@media ( max-width:991px  )
+    .reviews-from-employees
+        &__block-reviews-slide
+            height: 602px
+    .texts-block-reviews
+        &__name-and-place
+
+@media ( max-width:768px  )
+    .reviews-from-employees
+        &__block-reviews-slide
+            min-height: 790px
+    .item-reviews
+        &__arrow-slide
+            display: none
+    .block-reviews-slide
+        &__item-reviews
+            justify-content: center
+            align-items: center
+            flex-direction: column
+    .item-reviews
+        &__img-driver
+            margin: 0
+        &__texts-block-reviews
+            margin: 0
+            padding: 0 15px
+    .img-driver
+        &__img
+            padding: 20px 0
+@media ( max-width:480px  )
+   
+@media ( max-width:375px  )
+    .reviews-from-employees
+        &__block-reviews-slide
+            min-height: 700px
+    .img-driver
+        &__img
+            img
+                width: 140px
+                height: 140px
+    

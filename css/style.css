@@ -788,10 +788,11 @@ template {
     justify-content: center;
     align-items: center; }
   .reviews-from-employees__title {
+    text-align: center;
     margin-bottom: 50px; }
   .reviews-from-employees__block-reviews-slide {
-    width: 1069px;
-    height: 502px;
+    max-width: 1069px;
+    min-height: 502px;
     border-radius: 61px;
     backdrop-filter: blur(4px);
     background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%); }
@@ -801,19 +802,23 @@ template {
   display: flex; }
 
 .item-reviews__img-driver {
-  margin: 67px 0 0 67px; }
+  margin: 67px 0 0 67px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 .item-reviews__texts-block-reviews {
   margin-top: 104px;
   margin-left: 68px; }
 .item-reviews__arrow-slide {
-  position: absolute;
-  bottom: -80px;
-  left: 160px;
   display: flex; }
+
+.img-driver__img {
+  margin-bottom: 20px; }
 
 .texts-block-reviews__text-reviews {
   max-width: 443px;
-  height: 226px;
+  min-height: 226px;
   margin-bottom: 35px; }
 
 .name-and-place__name-driver {
@@ -825,6 +830,36 @@ template {
 .arrow-slide__left-arrow {
   margin-right: 22px; }
 
+@media (max-width: 991px) {
+  .reviews-from-employees__block-reviews-slide {
+    height: 602px; } }
+@media (max-width: 768px) {
+  .reviews-from-employees__block-reviews-slide {
+    min-height: 790px; }
+
+  .item-reviews__arrow-slide {
+    display: none; }
+
+  .block-reviews-slide__item-reviews {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .item-reviews__img-driver {
+    margin: 0; }
+  .item-reviews__texts-block-reviews {
+    margin: 0;
+    padding: 0 15px; }
+
+  .img-driver__img {
+    padding: 20px 0; } }
+@media (max-width: 375px) {
+  .reviews-from-employees__block-reviews-slide {
+    min-height: 700px; }
+
+  .img-driver__img img {
+    width: 140px;
+    height: 140px; } }
 .car-requirement {
   background-image: url(../img/welcome-main-section/car-requirement/background-map.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -844,6 +879,9 @@ template {
   .car-requirement__benefits-points-block {
     margin-top: 33px; }
 
+.img-car__palnet {
+  position: relative;
+  left: 20%; }
 .img-car__car {
   position: absolute;
   top: 0;
@@ -855,6 +893,53 @@ template {
 .link-to-app__apple {
   margin-right: 25px; }
 
+@media (max-width: 1199px) {
+  .img-car__palnet img {
+    width: 290px;
+    height: 290px; }
+  .img-car__car img {
+    width: 400px;
+    height: 280px; } }
+@media (max-width: 991px) {
+  .img-car__palnet {
+    width: 290px;
+    height: 290px; }
+
+  .car-requirement__benefits-points-block {
+    padding-left: 110px; } }
+@media (max-width: 768px) {
+  .car-requirement__benefits-points-block {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .car-requirement__link-to-app {
+    display: flex;
+    flex-direction: column; }
+  .car-requirement__img-car {
+    left: -50px; }
+  .car-requirement__block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+@media (max-width: 480px) {
+  .img-car__palnet {
+    width: 195px;
+    height: 195px; }
+  .img-car__car img {
+    width: 330px;
+    height: 230px; } }
+@media (max-width: 375px) {
+  .car-requirement__img-car {
+    left: -70px; }
+
+  .img-car__palnet {
+    width: 175px;
+    height: 175px; }
+  .img-car__car img {
+    width: 308px;
+    height: 205px; } }
 .job-application {
   position: relative;
   padding: 86px 0 68px 0;
@@ -895,6 +980,17 @@ template {
   top: 16px;
   left: 34px; }
 
+@media (max-width: 991px) {
+  .job-application__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+@media (max-width: 480px) {
+  .job-application__title-job {
+    margin-right: 0; } }
+@media (max-width: 375px) {
+  .job-application__title-job {
+    padding: 0 30px; } }
 .we-work-in-cities {
   background-image: url(../img/welcome-main-section/background.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -909,6 +1005,12 @@ template {
   .we-work-in-cities__map img {
     width: 100%; }
 
+@media (max-width: 768px) {
+  .we-work-in-cities {
+    padding: 90px 0 0 0; } }
+@media (max-width: 480px) {
+  .we-work-in-cities {
+    padding: 57px 0 0 0; } }
 .our-contact {
   background-image: url(../img/welcome-main-section/background.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -927,13 +1029,13 @@ template {
     justify-content: space-between;
     align-items: start; }
 
-.messanger-number__number {
+.bottom-box-contact__number-phone {
   font-family: "RF Dewi Expanded", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #fff; }
 
-.bottom-box-contact__number-phone {
+.messanger-number__number {
   font-family: "RF Dewi Expanded", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -951,6 +1053,25 @@ template {
   font-size: 18px;
   color: #fff; }
 
+@media (max-width: 768px) {
+  .our-contact__top-box-contact {
+    flex-direction: column;
+    align-items: start; }
+  .our-contact__bottom-box-contact {
+    flex-direction: column; }
+
+  .top-box-contact__title {
+    margin-bottom: 10px; }
+  .top-box-contact__logo {
+    display: none; }
+
+  .bottom-box-contact__messanger-number {
+    margin-bottom: 35px; }
+  .bottom-box-contact__number-phone {
+    margin-bottom: 35px; }
+
+  .messanger-number__text {
+    display: none; } }
 .footer {
   background: #1e1e1e;
   padding: 45px 0 58px 0; }
@@ -1011,6 +1132,27 @@ template {
   color: #fff;
   opacity: 0.4; }
 
+@media (max-width: 991px) {
+  .list-footer__item:nth-last-child(2) {
+    width: 55px; } }
+@media (max-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start; }
+
+  .left-box__menu-footer {
+    display: none; }
+
+  .right-box__logo {
+    margin-bottom: 18px; }
+  .right-box__privacy-policy-and-agreement {
+    flex-direction: column;
+    margin-bottom: 33px; }
+
+  .privacy-policy-and-agreement__privacy-policy {
+    margin-right: 0;
+    margin-bottom: 10px; } }
 .delivery {
   margin-bottom: 35px; }
 
@@ -1294,6 +1436,11 @@ main {
   .title {
     font-size: 25px; } }
 @media (max-width: 375px) {
+  .input-form-item {
+    border: none;
+    width: 300px;
+    height: 50px; }
+
   .white-button {
     width: 176px;
     height: 45px;

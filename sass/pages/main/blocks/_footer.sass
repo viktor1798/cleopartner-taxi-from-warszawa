@@ -68,3 +68,37 @@ $second-family: "RF Dewi", sans-serif
         margin-right: 20px
     &__agreement
         @include footer-text()
+
+
+@media ( max-width:991px  )
+    .list-footer
+        &__item:nth-last-child(2)
+            width: 55px
+            
+
+@media ( max-width:768px  )
+    .footer
+        &__container
+            display: flex
+            flex-direction: column-reverse
+            align-items: flex-start
+    .left-box
+        &__menu-footer
+            display: none
+    .right-box
+        &__logo
+            margin-bottom: 18px
+        &__privacy-policy-and-agreement
+            flex-direction: column
+            margin-bottom: 33px
+    
+    .privacy-policy-and-agreement
+        &__privacy-policy
+            margin-right: 0
+            margin-bottom: 10px
+    
+@media ( max-width:480px  )
+    
+
+@media ( max-width:375px  )
+    

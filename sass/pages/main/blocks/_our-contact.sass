@@ -32,8 +32,10 @@ $font-family: "RF Dewi Expanded", sans-serif
 
 .bottom-box-contact
     &__messanger-number
+    &__number-phone
+        @include number-text()
     &__telegram
-        a
+        
 
 .messanger-number
     &__number
@@ -41,8 +43,6 @@ $font-family: "RF Dewi Expanded", sans-serif
     &__text
 
 .bottom-box-contact
-    &__number-phone
-        @include number-text()
 
 .number-phone
     &__number
@@ -51,4 +51,37 @@ $font-family: "RF Dewi Expanded", sans-serif
 .telegram
     &__text
         @include number-text()
-        
+    
+
+@media ( max-width:991px  )
+
+@media ( max-width:768px  )
+    .our-contact
+        &__top-box-contact
+            flex-direction: column
+            align-items: start
+        &__bottom-box-contact
+            flex-direction: column
+
+    .top-box-contact
+        &__title
+            margin-bottom: 10px
+        &__logo
+            display: none
+
+    .bottom-box-contact
+        &__messanger-number
+            margin-bottom: 35px
+        &__number-phone
+            margin-bottom: 35px
+
+    .messanger-number
+        &__number
+        &__text
+            display: none
+   
+@media ( max-width:480px  )
+ 
+@media ( max-width:375px  )
+    
+            
