@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
   <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
-      rel="stylesheet" />
+    href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
   <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css">
   <title>FAQ</title>
 </head>
@@ -21,7 +21,7 @@
           <div class="header__logo">
             <a href="../index.html"><img class="logo__img" src="../img/welcome-main-section/header-logo.png" alt=""></a>
           </div>
-          <div class="header__menu">
+          <div class="header__menu" id="menu">
             <ul class="menu__list">
               <li class="list__item"><a href="../index.html">Главная</a></li>
               <li class="list__item"><a href="breakage.html">Страховка</a></li>
@@ -31,8 +31,25 @@
             </ul>
           </div>
           <button class="header__button clear-button">Оставить заявку</button>
-        </div>
+          <div class="header__humburger-menu">
+            <div class="humburger-menu__humb-field" id="hamb">
+              <span class="humb-field__bar"></span> <span class="humb-field__bar"></span>
+              <span class="humb-field__bar"></span>
+            </div>
+          </div>
+          </div>
       </header>
+      <div class="popup" id="popup">
+        <div class="popup__menu">
+          <ul class="menu__list-popup">
+            <li class="list-popup__item"><a href="../index.html">Главная</a></li>
+            <li class="list-popup__item"><a href="breakage.html">Страховка</a></li>
+            <li class="list-popup__item"><a href="faq.html">FAQ</a></li>
+            <li class="list-popup__item"><a href="delivery.html">Доставка</a></li>
+            <li class="list-popup__item"><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="welcome-main-section__welcom-box">
         <div class="welcome-box__container container">
           <h1 class="welcome-box__title faq-page-title">FAQ</h1>
@@ -44,44 +61,45 @@
     </section>
     <section class="faq-box">
       <div class="faq-box__container container">
-          <h2 class="faq-box__title title">Частые вопросы</h2>
-          <div class="faq-box__question">
-              <div class="question__el active">
-                  <p class="el__text subtitle active">Обязателен ли автомобиль для работы в доставке?</p>
-                  <div class="el__icon-arrow active">
-                      <img src="../icons/faq/bottom-yellow-arrow.svg" alt="">
-                  </div>
-              </div>
-              <div class="el__answer">
-                  <p class="answer__text text">Все что нужно, это Ваш загранпаспорт и права ( в случае доставки на автомобиле)</p>
-              </div>
-              <div class="question__el">
-                  <p class="el__text subtitle">Обязателен ли автомобиль для работы в доставке?</p>
-                  <div class="el__icon-arrow">
-                      <img src="../icons/faq/right-white-arrow.svg" alt="">
-                  </div>
-              </div>
-              <div class="question__el">
-                  <p class="el__text subtitle">Где мне взять сумку для доставки?</p>
-                  <div class="el__icon-arrow">
-                      <img src="../icons/faq/right-white-arrow.svg" alt="">
-                  </div>
-              </div>
-              <div class="question__el">
-                  <p class="el__text subtitle">Сколько я могу заработать в доставке?</p>
-                  <div class="el__icon-arrow">
-                      <img src="../icons/faq/right-white-arrow.svg" alt="">
-                  </div>
-              </div>
-              <div class="question__el">
-                  <p class="el__text subtitle">Где и когда я могу начинать выполнять заказы?</p>
-                  <div class="el__icon-arrow">
-                      <img src="../icons/faq/right-white-arrow.svg" alt="">
-                  </div>
-              </div>
+        <h2 class="faq-box__title title">Частые вопросы</h2>
+        <div class="faq-box__question">
+          <div class="question__el active">
+            <p class="el__text subtitle active">Обязателен ли автомобиль для работы в доставке?</p>
+            <div class="el__icon-arrow active">
+              <img src="../icons/faq/bottom-yellow-arrow.svg" alt="">
+            </div>
           </div>
+          <div class="el__answer">
+            <p class="answer__text text">Все что нужно, это Ваш загранпаспорт и права ( в случае доставки на автомобиле)
+            </p>
+          </div>
+          <div class="question__el">
+            <p class="el__text subtitle">Обязателен ли автомобиль для работы в доставке?</p>
+            <div class="el__icon-arrow">
+              <img src="../icons/faq/right-white-arrow.svg" alt="">
+            </div>
+          </div>
+          <div class="question__el">
+            <p class="el__text subtitle">Где мне взять сумку для доставки?</p>
+            <div class="el__icon-arrow">
+              <img src="../icons/faq/right-white-arrow.svg" alt="">
+            </div>
+          </div>
+          <div class="question__el">
+            <p class="el__text subtitle">Сколько я могу заработать в доставке?</p>
+            <div class="el__icon-arrow">
+              <img src="../icons/faq/right-white-arrow.svg" alt="">
+            </div>
+          </div>
+          <div class="question__el">
+            <p class="el__text subtitle">Где и когда я могу начинать выполнять заказы?</p>
+            <div class="el__icon-arrow">
+              <img src="../icons/faq/right-white-arrow.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
     <section class="job-application">
       <div class="job-application__container container">
         <div class="job-application__title-job">
@@ -176,6 +194,5 @@
   </footer>
 
 </body>
-<!-- <script src="js/index.js"></script> -->
-
+<script src="../js/index.js"></script>
 </html>

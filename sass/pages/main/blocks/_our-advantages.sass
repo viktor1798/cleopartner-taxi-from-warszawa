@@ -20,9 +20,11 @@ $text-shadow: #000
         justify-content: space-around
         border-radius: 42px
         width: 1023px
+        // max-width: 100%
         height: 416px
+        // min-height: 100vh
         backdrop-filter: blur(12px)
-        background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%)
+        background: rgba(0, 0, 0, 0.3)
     &__background-video
         position: absolute
         top: 0
@@ -58,6 +60,7 @@ $text-shadow: #000
         background-color: #FFBF44
         margin-bottom: 20px
     &__text
+
 .advantages-block-item
     width: 236px
     text-align: center
@@ -73,3 +76,50 @@ $text-shadow: #000
     display: flex
     justify-content: center
     align-items: center
+
+    
+@media ( max-width:1199px  )
+    .our-advantages
+        &__advantages-box
+            max-width: 80%
+
+@media ( max-width:991px  )
+    .advantages-box
+        &__advantages-green-block
+            display: flex
+            justify-content: center
+            padding: 0 5px
+        &__advantages-yellow-block
+            display: flex
+            justify-content: center
+            padding: 0 5px
+
+@media ( max-width:768px  )
+    .our-advantages
+        &__advantages-box
+            max-width: 100%
+    
+
+
+@media ( max-width:480px  )
+    .our-advantages
+        padding-bottom: 30px
+        &__advantages-box
+            min-height: 950px
+            justify-content: center
+            align-items: center
+            padding: 20px 0 
+    .advantages-box
+        &__advantages-green-block
+            justify-content: center
+            align-items: center
+            flex-direction: column
+        &__advantages-yellow-block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    .advantages-block-item
+        margin-bottom: 25px
+
+@media ( max-width:375px  )
+    

@@ -23,7 +23,7 @@
           <div class="header__logo">
             <a href="../index.html"><img class="logo__img" src="../img/welcome-main-section/header-logo.png" alt=""></a>
           </div>
-          <div class="header__menu">
+          <div class="header__menu" id="menu">
             <ul class="menu__list">
               <li class="list__item"><a href="../index.html">Главная</a></li>
               <li class="list__item"><a href="breakage.html">Страховка</a></li>
@@ -33,8 +33,25 @@
             </ul>
           </div>
           <button class="header__button clear-button">Оставить заявку</button>
+          <div class="header__humburger-menu">
+            <div class="humburger-menu__humb-field" id="hamb">
+              <span class="humb-field__bar"></span> <span class="humb-field__bar"></span>
+              <span class="humb-field__bar"></span>
+            </div>
+          </div>
         </div>
       </header>
+      <div class="popup" id="popup">
+        <div class="popup__menu">
+          <ul class="menu__list-popup">
+            <li class="list-popup__item"><a href="../index.html">Главная</a></li>
+            <li class="list-popup__item"><a href="breakage.html">Страховка</a></li>
+            <li class="list-popup__item"><a href="faq.html">FAQ</a></li>
+            <li class="list-popup__item"><a href="delivery.html">Доставка</a></li>
+            <li class="list-popup__item"><a href="#contact">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
       <div class="welcome-main-section__welcom-box">
         <div class="welcome-box__container container">
           <h1 class="welcome-box__title title-welcome">Подключайтесь к такси в Польше
@@ -80,9 +97,11 @@
         <div class="insurance-cost__cost-calculation">
           <div class="cost-calculation__calculator">
             <div class="calculator__cost-text">
-              <p class="cost-text__period">Период: <span class="period__text"><span class="period__number">3</span> месяца</span></p>
+              <p class="cost-text__period">Период: <span class="period__text"><span class="period__number">3</span>
+                  месяца</span></p>
               <p class="cost-text__dash">&mdash;</p>
-              <p class="cost-text__price">Цена: <span class="price__text"><span class="price__number">300</span> злотых</span></p>
+              <p class="cost-text__price">Цена: <span class="price__text"><span class="price__number">300</span>
+                  злотых</span></p>
             </div>
             <div>СДЕЛАТЬ ПОЛЗУНОК СТОИМОСТИ!!!</div>
           </div>
@@ -156,6 +175,6 @@
   </footer>
 
 </body>
-<!-- <script src="js/index.js"></script> -->
+<script src="../js/index.js"></script>
 
 </html>

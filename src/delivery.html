@@ -22,18 +22,34 @@
                         <a href="../index.html"><img class="logo__img" src="../img/welcome-main-section/header-logo.png"
                                 alt=""></a>
                     </div>
-                    <div class="header__menu">
+                    <div class="header__menu" id="menu">
                         <ul class="menu__list">
-                            <li class="list__item"><a href="../index.html">Главная</a></li>
-                            <li class="list__item"><a href="breakage.html">Страховка</a></li>
-                            <li class="list__item"><a href="faq.html">FAQ</a></li>
-                            <li class="list__item"><a href="delivery.html">Доставка</a></li>
-                            <li class="list__item"><a href="#contact">Контакты</a></li>
+                          <li class="list__item"><a href="../index.html">Главная</a></li>
+                          <li class="list__item"><a href="breakage.html">Страховка</a></li>
+                          <li class="list__item"><a href="faq.html">FAQ</a></li>
+                          <li class="list__item"><a href="delivery.html">Доставка</a></li>
+                          <li class="list__item"><a href="#contact">Контакты</a></li>
                         </ul>
-                    </div>
-                    <button class="header__button clear-button">Оставить заявку</button>
-                </div>
+                      </div>
+                      <button class="header__button clear-button">Оставить заявку</button>
+                      <div class="header__humburger-menu">
+                        <div class="humburger-menu__humb-field" id="hamb">
+                          <span class="humb-field__bar"></span> <span class="humb-field__bar"></span>
+                          <span class="humb-field__bar"></span>
+                        </div>
+                      </div>
             </header>
+            <div class="popup" id="popup">
+                <div class="popup__menu">
+                    <ul class="menu__list-popup">
+                        <li class="list-popup__item"><a href="../index.html">Главная</a></li>
+                        <li class="list-popup__item"><a href="breakage.html">Страховка</a></li>
+                        <li class="list-popup__item"><a href="faq.html">FAQ</a></li>
+                        <li class="list-popup__item"><a href="delivery.html">Доставка</a></li>
+                        <li class="list-popup__item"><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="welcome-main-section__welcom-box">
                 <div class="welcome-box__container container">
                     <h1 class="welcome-box__title title-welcome delivery">Стань курьером у нас
@@ -164,7 +180,8 @@
                         </div>
                     </div>
                     <div class="el__answer">
-                        <p class="answer__text text">Все что нужно, это Ваш загранпаспорт и права ( в случае доставки на автомобиле)</p>
+                        <p class="answer__text text">Все что нужно, это Ваш загранпаспорт и права ( в случае доставки на
+                            автомобиле)</p>
                     </div>
                     <div class="question__el">
                         <p class="el__text subtitle">Обязателен ли автомобиль для работы в доставке?</p>
@@ -257,5 +274,6 @@
         </footer>
     </footer>
 </body>
+<script src="../js/index.js"></script>
 
 </html>

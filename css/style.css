@@ -509,7 +509,7 @@ template {
     width: 100%;
     height: 100%;
     backdrop-filter: blur(4px);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
     z-index: 101;
     display: flex;
     align-items: center;
@@ -522,7 +522,7 @@ template {
     align-items: center; }
 
   .list-popup__item {
-    margin-bottom: 10px; }
+    margin: 20px 0; }
     .list-popup__item a {
       font-family: "RF Dewi", sans-serif;
       font-weight: 600;
@@ -531,9 +531,6 @@ template {
       text-align: center;
       color: #fff;
       transition: 0.5s; }
-
-  .list-popup__item {
-    color: #E9BC47; }
 
   .logo__img {
     width: 169px;
@@ -609,6 +606,75 @@ template {
 .buttons-work-us__advice {
   margin-right: 30px; }
 
+@media (max-width: 1199px) {
+  .buttons-work-us__follow-up {
+    display: none; }
+
+  .gif-in-macbook__gif {
+    width: 480px;
+    height: 308px; }
+
+  .img__work-us-box {
+    width: 606px;
+    height: 360px; } }
+@media (max-width: 991px) {
+  .img__about-us {
+    width: 340px;
+    height: 409px; }
+
+  .gif-in-macbook__gif {
+    width: 325px;
+    height: 208px; }
+
+  .img__work-us-box {
+    width: 400px;
+    height: 260px; }
+  .img__gif-in-macbook {
+    left: 37px; } }
+@media (max-width: 768px) {
+  .about-our-company__about-us-box {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center; }
+  .about-our-company__work-us-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .about-us-box__img {
+    margin-right: 0; }
+
+  .text-block-about-us__title {
+    text-align: center; }
+
+  .buttons-work-us__advice {
+    margin-bottom: 56px; }
+
+  .work-us-box__img {
+    margin-left: 0; }
+  .work-us-box__work-us-box {
+    width: 450px;
+    height: 260px; }
+  .work-us-box__gif-in-macbook {
+    left: 42px; }
+
+  .gif-in-macbook__gif {
+    width: 330px;
+    height: 215px; } }
+@media (max-width: 480px) {
+  .img__about-us {
+    width: 282px;
+    height: 340px; }
+  .img__work-us-box {
+    width: 329px;
+    height: 196px; }
+  .img__gif-in-macbook {
+    left: 32px;
+    top: 7px; }
+
+  .gif-in-macbook__gif {
+    width: 267px;
+    height: 168px; } }
 .our-advantages {
   position: relative;
   min-height: 678px; }
@@ -631,7 +697,7 @@ template {
     width: 1023px;
     height: 416px;
     backdrop-filter: blur(12px);
-    background: rgba(0, 0, 0, 0.3), linear-gradient(180deg, #000 0%, #000 100%); }
+    background: rgba(0, 0, 0, 0.3); }
   .our-advantages__background-video {
     position: absolute;
     top: 0;
@@ -673,6 +739,41 @@ template {
   justify-content: center;
   align-items: center; }
 
+@media (max-width: 1199px) {
+  .our-advantages__advantages-box {
+    max-width: 80%; } }
+@media (max-width: 991px) {
+  .advantages-box__advantages-green-block {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px; }
+  .advantages-box__advantages-yellow-block {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px; } }
+@media (max-width: 768px) {
+  .our-advantages__advantages-box {
+    max-width: 100%; } }
+@media (max-width: 480px) {
+  .our-advantages {
+    padding-bottom: 30px; }
+    .our-advantages__advantages-box {
+      min-height: 950px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0; }
+
+  .advantages-box__advantages-green-block {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .advantages-box__advantages-yellow-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  .advantages-block-item {
+    margin-bottom: 25px; } }
 .reviews-from-employees {
   background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -951,6 +1052,16 @@ template {
   background-color: #fff;
   margin-bottom: 20px; }
 
+@media (max-width: 991px) {
+  .advantages-box__advantages-white-block {
+    display: flex;
+    justify-content: center;
+    padding: 0 5px; } }
+@media (max-width: 480px) {
+  .advantages-box__advantages-white-block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 .faq-box {
   background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -1171,13 +1282,30 @@ main {
     max-width: 920px; } }
 @media (max-width: 991px) {
   .container {
-    max-width: 713px; } }
+    max-width: 100%;
+    padding: 0 20px; } }
 @media (max-width: 768px) {
   .container {
-    max-width: 475px;
     overflow: hidden; } }
 @media (max-width: 480px) {
   .container {
-    max-width: 100%; } }
+    max-width: 100%; }
+
+  .title {
+    font-size: 25px; } }
+@media (max-width: 375px) {
+  .white-button {
+    width: 176px;
+    height: 45px;
+    font-size: 13px; }
+
+  .title {
+    font-size: 30px; }
+
+  .text {
+    font-size: 14px; }
+
+  .subtitle {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
