@@ -1234,7 +1234,7 @@ template {
   background: rgba(0, 0, 0, 0.4); }
 
 .breakage {
-  padding: 65px 0 235px 0;
+  padding: 65px 0 135px 0;
   background-image: url(../img/welcome-main-section/car-requirement/background-map.png);
   background-color: rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
@@ -1247,7 +1247,9 @@ template {
     margin-right: 70px;
     padding-top: 65px; }
   .breakage__images {
-    position: relative; }
+    position: relative;
+    width: 560px;
+    height: 580px; }
 
 .info-box__title {
   margin-bottom: 30px; }
@@ -1266,6 +1268,53 @@ template {
   top: 0;
   z-index: 1; }
 
+@media (max-width: 1199px) {
+  .images__car-and-phone img {
+    width: 420px;
+    height: 380px; }
+  .images__ellips {
+    width: 300px;
+    height: 304px;
+    left: -90px; }
+
+  .breakage__info-box {
+    margin-right: 80px; } }
+@media (max-width: 991px) {
+  .images__car-and-phone img {
+    width: 370px;
+    height: 330px; }
+  .images__ellips {
+    width: 240px;
+    height: 244px;
+    left: -110px; } }
+@media (max-width: 768px) {
+  .breakage {
+    padding: 20px 0 80px 0; }
+    .breakage__container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    .breakage__info-box {
+      margin-right: 0; }
+    .breakage__images {
+      position: relative;
+      width: 330px;
+      height: 403px; }
+
+  .images__car-and-phone {
+    position: relative;
+    left: -20px;
+    display: flex;
+    justify-content: end; }
+    .images__car-and-phone img {
+      width: 448px;
+      height: 400px; }
+  .images__ellips {
+    display: none; } }
+@media (max-width: 480px) {
+  .images__car-and-phone img {
+    width: 418px;
+    height: 400px; } }
 .insurance-cost {
   background-image: url(../img/welcome-main-section/reviews-from-employees/bcground-reviews.png);
   background-color: rgba(0, 0, 0, 0.6);
@@ -1294,7 +1343,7 @@ template {
 
 .calculator__cost-text {
   padding-top: 27px;
-  margin-bottom: 28px;
+  margin: 0 0 20px 28px;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -1324,6 +1373,32 @@ template {
 .price__text {
   color: #e9bc47; }
 
+@media (max-width: 991px) {
+  .cost-calculation__calculator {
+    margin-right: 20px; } }
+@media (max-width: 768px) {
+  .insurance-cost__cost-calculation {
+    display: flex;
+    flex-direction: column; }
+
+  .cost-calculation__calculator {
+    max-width: 461px;
+    min-height: 104px;
+    margin-bottom: 27px;
+    margin-right: 0px; }
+
+  .cost-text__period {
+    font-size: 16px; }
+  .cost-text__dash {
+    font-size: 16px; }
+  .cost-text__price {
+    font-size: 16px; } }
+@media (max-width: 480px) {
+  .cost-calculation__calculator {
+    max-width: 371px; } }
+@media (max-width: 375px) {
+  .cost-calculation__calculator {
+    max-width: 301px; } }
 main {
   max-width: 100%;
   overflow: hidden; }

@@ -38,11 +38,10 @@ $font-family: "RF Dewi Expanded", sans-serif
 .calculator
     &__cost-text
         padding-top: 27px
-        margin-bottom: 28px
+        margin: 0 0 20px 28px
         display: flex
         justify-content: center
         align-items: center
-        
 
 .cost-text
     &__period
@@ -69,3 +68,43 @@ $font-family: "RF Dewi Expanded", sans-serif
 
 .buttons
     &__get-insurance
+
+@media ( max-width:1199px  )
+
+@media ( max-width:991px  )
+    .cost-calculation
+        &__calculator
+            margin-right: 20px
+
+@media ( max-width:768px  )
+    .insurance-cost
+        &__cost-calculation
+            display: flex
+            flex-direction: column
+
+    .cost-calculation
+        &__calculator
+            max-width: 461px
+            min-height: 104px
+            margin-bottom: 27px
+            margin-right: 0px
+    .cost-text
+        &__period
+            font-size: 16px
+            // margin-right: 11px
+        &__dash
+            font-size: 16px
+            // margin-right: 11px
+        &__price
+            font-size: 16px
+        // margin-right: 11px
+
+@media ( max-width:480px  )
+    .cost-calculation
+        &__calculator
+            max-width: 371px
+
+@media ( max-width:375px  )
+    .cost-calculation
+        &__calculator
+            max-width: 301px
